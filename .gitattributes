@@ -2,4 +2,4 @@
 *.java lingist-detectable=True
 *.html lingist-detectable=True
 *.xml lingist-detectable=True
-*.mysql lingist-detectable=True
+*.sql lingist-detectable=True
