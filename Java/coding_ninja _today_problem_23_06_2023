@@ -1,0 +1,26 @@
+import java.util.* ;
+import java.io.*; 
+import java.util.ArrayList;
+
+public class Solution {
+
+	public static ArrayList<ArrayList<Character>> interestingPattern(int N) {
+       int currentalpha='A';
+            for(int i=1;i<N;i++){
+                StringBuilder row=new StringBuilder();
+                for(int j=N;j>=i;j--){
+                    row.append((char) currentalpha);
+                    currentalpha++;
+                }
+                System.out.println(row);
+            }
+            return interestingPattern(1);
+        }
+        public static void main(String[] args){
+            Scanner sc=new Scanner(System.in);
+            int N=sc.nextInt();
+
+            ArrayList result=interestingPattern(N);
+            System.out.println(result);
+        }
+}
